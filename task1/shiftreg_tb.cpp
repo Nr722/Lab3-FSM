@@ -25,7 +25,7 @@ int main (int argc, char **argv, char **ev){
     vbdHeader("lab 3: shiftReg");
     //initialize simulation inputs
     top->clk = 1;
-    //top->rst = 1;
+    top->rst = 1;
     top->en=0;
     for(i=0; i<MAX_SIM_CYC; i++){
       
@@ -39,7 +39,7 @@ int main (int argc, char **argv, char **ev){
         top->clk = !top->clk;
         top->eval ();
       }
-      //top->rst=0;
+      top->rst=0;
       vbdHex(1, top->data_out & 0xF);
       vbdBar(top->data_out & 0xFF);
       vbdCycle(i+1);

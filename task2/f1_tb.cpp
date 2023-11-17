@@ -22,7 +22,7 @@ int main (int argc, char **argv, char **ev){
 
     //init Vbuddy
     if(vbdOpen()!=1) return (-1);
-    vbdHeader("lab 3: task2");
+    vbdHeader("lab 3: task3");
     //initialize simulation inputs
     top->clk = 1;
     top->rst = 1;

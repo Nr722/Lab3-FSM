@@ -6,14 +6,6 @@
 
 #include "Vlfsr___024root.h"
 
-VL_ATTR_COLD void Vlfsr___024root___initial__TOP__0(Vlfsr___024root* vlSelf) {
-    if (false && vlSelf) {}  // Prevent unused
-    Vlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+    Vlfsr___024root___initial__TOP__0\n"); );
-    // Body
-    vlSelf->lfsr__DOT__sreg = 1U;
-}
-
 VL_ATTR_COLD void Vlfsr___024root___settle__TOP__0(Vlfsr___024root* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Vlfsr__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
@@ -28,7 +20,7 @@ VL_ATTR_COLD void Vlfsr___024root___eval_initial(Vlfsr___024root* vlSelf) {
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vlfsr___024root___eval_initial\n"); );
     // Body
     vlSelf->__Vclklast__TOP__clk = vlSelf->clk;
-    Vlfsr___024root___initial__TOP__0(vlSelf);
+    vlSelf->__Vclklast__TOP__rst = vlSelf->rst;
 }
 
 VL_ATTR_COLD void Vlfsr___024root___eval_settle(Vlfsr___024root* vlSelf) {

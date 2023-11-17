@@ -19,6 +19,7 @@ class Vlfsr___024root final : public VerilatedModule {
     VL_OUT8(data_out,4,1);
     CData/*3:0*/ lfsr__DOT__sreg;
     CData/*0:0*/ __Vclklast__TOP__clk;
+    CData/*0:0*/ __Vclklast__TOP__rst;
 
     // INTERNAL VARIABLES
     Vlfsr__Syms* const vlSymsp;
