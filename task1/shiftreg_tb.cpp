@@ -3,7 +3,7 @@
 #include "verilated_vcd_c.h"
 #include "iostream"
 #include "vbuddy.cpp"     // include vbuddy code
-#define MAX_SIM_CYC 100
+#define MAX_SIM_CYC 100000
 #define ADDRESS_WIDTH 8
 
 int main (int argc, char **argv, char **ev){
